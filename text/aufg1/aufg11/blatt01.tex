@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage{enumerate}
+
+\begin{document}
+
+\section*{\center Programmierung von Systemen}
+Lukas Petrich (754289)\hfill 	Blatt 1\\
+Tutor: Michael Wendt \\[5ex]
+
+\large{Aufgabe 1-1:}
+\begin{enumerate}
+	\item \hfill\\ \begin{tabular}{|l||c|c|c|}
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  & hungry & food & legs \\ 
+		\hline \hline
+		\rule[-1ex]{0pt}{2.5ex} Class Animal & Ja & Ja & Nein \\ 
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex} Class Bird & Nein & Ja (selbes Package) & Ja \\ 
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex} Class Eagle & Nein & Ja (selbes Package) & Ja \\ 
+		\hline 
+		\end{tabular} 
+	
+	\item Overriding: \texttt{Animal.eat()} $\rightarrow$ \texttt{Bird.eat()}\\
+	 Overloading: \texttt{Eagle.fly()} bzw. \texttt{Eagle.fly(int height)}
+	\item \hfill\\ \begin{tabular}{|c|l|}
+		\hline 
+		1 & in Ordnung \\ 
+		\hline 
+		2 & 32 \\ 
+		\hline 
+		3 & funktioniert nicht, da Eagle Bird erweitert. \\ 
+		\hline 
+		4 & in Ordnung \\ 
+		\hline 
+		5 & 32 \\ 
+		\hline 
+		6 & in Ordnung \\ 
+		\hline 
+		7 & funktioniert nicht, da \texttt{fly(int height) private} ist  \\ 
+		\hline 
+		\end{tabular} 
+\end{enumerate}	
+
+
+\end{document}
